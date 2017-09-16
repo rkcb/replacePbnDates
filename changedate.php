@@ -1,6 +1,6 @@
 <?php
 /*
- * call like this [d 2017.11.11] [p <path>] [f /.*pbn/i]
+ * call like this php changedate.php [d 2017.11.11] [p <path>] [f /.*pbn/i]
  * if any option is missing then it is replaced by a default:
  * - date is current date
  * - path is current path
