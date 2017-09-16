@@ -1,11 +1,11 @@
 <?php
 /*
- * 1. filter
- * 2. open fit files
- * 3. new date
- * 4. find the dates and replace them
- * */
-
+ * call like this [d 2017.11.11] [p <path>] [f /.*pbn/i]
+ * if any option is missing then it is replaced by a default:
+ * - date is current date
+ * - path is current path
+ * - filter is all pbn files
+ */
 
 function isValidDate($date_str, $format = 'Y.m.d') {
     $d = DateTime::createFromFormat($format, $date_str);
