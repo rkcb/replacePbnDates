@@ -19,7 +19,6 @@ function isValidDate($date_str, $format = 'Y.m.d') {
  * @return int number of replaced dates
  */
 function replaceDates($file_name, $new_date = '1111.22.33') {
-    mb_internal_encoding("ISO-8859-1");
     $lines = file($file_name);
     $lines = $lines ? $lines : [];
     $pattern = "/\[(Date|EventDate)\s+\"(\d{4}\.\d{2}\.\d{2})\"\]/i";
